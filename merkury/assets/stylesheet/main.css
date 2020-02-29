@@ -1,0 +1,135 @@
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Roboto;
+}
+
+.container {
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+.header {
+	padding: 20px 0 0 0;
+}
+
+.header__bk {
+	max-width: 100%;
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+}
+
+.header__row {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.header__logo {
+	margin: 0 0 0 5px;
+	max-width: 14%;
+}
+
+.header__nav {
+	flex: 1 1 100%;
+	font-size: 18px;
+	color: #fff;
+	align-self: center;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.header__nav > ul {
+	display: flex;
+}
+
+.header__nav a {
+	margin: 0 0 0 30px;
+	color: #fff;
+	transition: color .5s;
+}
+
+.header__nav a:hover {
+	margin: 0 0 0 30px;
+	color: #05339a;
+}
+
+.header__row .header__login {
+	color: #5584ff;
+	font-size: 19px;
+	padding: 10px 35px;
+	border: .5px solid #5584ff;
+	border-radius: 30px;
+	transition: color, border .5s;
+}
+
+.header__login:hover {
+	color: #05339a;
+	font-size: 19px;
+	padding: 10px 35px;
+	border: .5px solid #05339a;
+	border-radius: 30px;
+}
+
+.getstarted {
+	margin-top: 120px;
+}
+
+.getstarted__row {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.getstarted__title {
+	color: #fff;
+	font-size: 40px;
+	font-weight: 100;
+	margin-bottom: 20px;
+}
+
+.getstarted__subtitle {
+	margin-bottom: 65px;
+	color: #8492af;
+	font-size: 25px;
+	font-weight: 400;
+}
+
+.getstarted__btn {
+	font-size: 15px;
+	font-weight: 400;
+	background: #5584ff;
+	border-radius: 30px;
+	color: #fff;
+	padding: 10px 30px;
+	margin-bottom: 30px;
+	transition: color, background .5s;
+}
+
+.getstarted__btn:hover {
+	color: #fff;
+	font-size: 15px;
+	font-weight: 400;
+	background: #05339a;
+	border-radius: 30px;
+	color: #fff;
+	padding: 10px 30px;
+	margin-bottom: 30px;
+}
