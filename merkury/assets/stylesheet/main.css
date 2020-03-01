@@ -133,6 +133,10 @@ body {
 	margin-bottom: 30px;
 }
 
+.getstarted__home{
+	max-width: 80%;
+}
+
 .see-more{
 	margin-top: 150px;
 }
@@ -156,8 +160,8 @@ body {
 
 .see-more_linear:after {
 	content: "";
-	height: .5px;
-	width: 200px;
+	height: .2%;
+	width: 50%;
 	background: #ccc;
 	position: absolute;
 	top: 13%;
@@ -207,6 +211,7 @@ body {
 
 .all-browser__row {
 	display: flex;
+	justify-content: space-around;
 }
 
 .all-browser__column:first-child {
@@ -215,10 +220,12 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
+	flex: 1 1 50%;
 }
 
 .all-browser__column:last-child {
 	margin-right: -25%;
+	flex: 1 1 75%;
 }
 
 .all-browser__title {
@@ -261,3 +268,12 @@ body {
 .all-browser__img-platform {
 	max-width: 90%;
 }
+
+.drag-drop {
+	margin-top: 100px;
+}
+
+.drag-drop-bg {
+	max-width: 100%;
+}
+
