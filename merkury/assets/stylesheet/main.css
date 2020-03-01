@@ -43,7 +43,7 @@ body {
 }
 
 .header__logo {
-	margin: 0 0 0 5px;
+	margin: 0 0 0 1%;
 	max-width: 14%;
 }
 
@@ -68,7 +68,7 @@ body {
 
 .header__nav a:hover {
 	margin: 0 0 0 30px;
-	color: #05339a;
+	color: #5867b1;
 }
 
 .header__row .header__login {
@@ -77,14 +77,14 @@ body {
 	padding: 10px 35px;
 	border: .5px solid #5584ff;
 	border-radius: 30px;
-	transition: color, border .5s;
+	transition: color .5s, border .5s;
 }
 
 .header__login:hover {
-	color: #05339a;
+	color: #7291ff;
 	font-size: 19px;
 	padding: 10px 35px;
-	border: .5px solid #05339a;
+	border: .5px solid #7291ff;
 	border-radius: 30px;
 }
 
@@ -120,16 +120,83 @@ body {
 	color: #fff;
 	padding: 10px 30px;
 	margin-bottom: 30px;
-	transition: color, background .5s;
+	transition: color .5s, background .5s;
 }
 
 .getstarted__btn:hover {
-	color: #fff;
+	color: #5584ff;
 	font-size: 15px;
 	font-weight: 400;
-	background: #05339a;
+	background: #192369;
 	border-radius: 30px;
-	color: #fff;
 	padding: 10px 30px;
 	margin-bottom: 30px;
 }
+
+.see-more{
+	margin-top: 150px;
+}
+
+.see-more__row {
+	display: flex;
+	justify-content: space-around;
+}
+
+.see-more__column{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+
+.see-more__column_img {
+	width: 75px;
+	height: 75px;
+}
+
+.see-more_linear:after {
+	content: "";
+	height: .5px;
+	width: 200px;
+	background: #ccc;
+	position: absolute;
+	top: 13%;
+	left: 73%;
+}
+
+.see-more__column_title {
+	margin-top: 30px;
+	color: #0e1a35;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.see-more__column_subtitle {
+	line-height: 1.5;
+	text-align: center;
+	margin: 30px 30px 0 30px;
+	font-size: 15px;
+	color: #8492af;
+}
+
+.see-more__column_btn {
+	font-size: 15px;
+	font-weight: bold;
+	color: #0e1a35;
+	border: .5px solid #ccc;
+	border-radius: 30px;
+	margin-top: 40px;
+	padding: 10px 70px;
+	transition: background .5s;
+}
+
+.see-more__column_btn:hover {
+	font-size: 15px;
+	font-weight: bold;
+	border: .5px solid #ccc;
+	background: #ccc;
+	border-radius: 30px;
+	margin-top: 40px;
+	padding: 10px 70px;
+}
+
