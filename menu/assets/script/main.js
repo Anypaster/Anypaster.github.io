@@ -1,6 +1,6 @@
-let login = prompt("Enter login");
+let login = prompt("enter login");
 if (login == "admin") {
-  let password = prompt("Enter password");
+  let password = prompt("enter password");
   if (password == "admin") {
     alert("Welcome !");
   } else if (password == null) {
