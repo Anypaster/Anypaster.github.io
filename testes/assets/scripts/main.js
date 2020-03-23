@@ -1,4 +1,4 @@
-/////////////////LOGIN/////////////////////////////
+/////////////////LOGIN//////////////
 function login() {
   let login = prompt("Enter login");
   if (login == "admin") {
