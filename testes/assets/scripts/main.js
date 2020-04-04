@@ -1,19 +1,14 @@
 /////////////////LOGIN//////////////
 function login() {
-  let login = prompt("Enter login");
-  if (login == "admin") {
-    let password = prompt("Enter password");
-    if (password == "admin") {
-      alert("Welcome !");
-    } else if (password == null) {
-      alert("cancel");
-    } else {
-      alert("incorected password");
-    }
-  } else if (login == null) {
-    alert("cancel");
-  } else {
-    alert("login not found");
+  let login = prompt("Enter name: ", "admin");
+  while (login != "admin") {
+    alert("Login not found");
+    login = prompt("Enter name: ", "admin");
+  }
+  login = prompt("Enter password: ", "admin");
+  while (login != "admin") {
+    alert("incorect password");
+    login = prompt("Enter password: ", "admin");
   }
 }
 /////////////////////////RECURSION///////////////////////////
