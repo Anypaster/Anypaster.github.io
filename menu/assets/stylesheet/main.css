@@ -112,7 +112,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     -webkit-background-clip: text;
     background-clip: text;
     background-size: contain;
-    font-size: 20px;
+    font-size: 19px;
     transition: font-size .5s;
   }
   .header a:hover {
@@ -122,7 +122,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     -webkit-background-clip: text;
     background-clip: text;
     background-size: contain;
-    font-size: 23px;
+    font-size: 20px;
     animation: animatedText .5s linear;
   }
   @keyframes animatedText {
