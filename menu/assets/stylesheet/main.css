@@ -68,7 +68,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     }
 
 }
-@media screen and (min-width: 881px){
+@media screen and (min-width: 880px) and (max-width: 1080px){
   body{
     font-family: Comic Sans MS, serif;
   }
@@ -92,8 +92,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     align-items: center;
   }
   .header__list li {
-    width: 125px;
-    margin: 0 20px;
+    margin: 0 40px;
   }
 
   .header__home {
@@ -112,17 +111,14 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     -webkit-background-clip: text;
     background-clip: text;
     background-size: contain;
-    font-size: 19px;
-    transition: font-size .5s;
+    font-size: 20px;
   }
   .header a:hover {
-    width: 135px;
     color: rgba(225, 225, 225, .2);
     background: linear-gradient(90deg, rgba(255,46,0,1) 0%, rgba(255,106,42,1) 25%, rgba(249,178,34,1) 50%, rgba(255,191,61,1) 80%, rgba(255,230,86,1) 90%, rgba(251,255,79,1) 100%);
     -webkit-background-clip: text;
     background-clip: text;
     background-size: contain;
-    font-size: 20px;
     animation: animatedText .5s linear;
   }
   @keyframes animatedText {
@@ -421,7 +417,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
   .header{
     background: rgba(16, 15, 13, 0.95);
     width: 100%;
-    height: 50px;
+    height: 8%;
     border-radius: 0 0 5px 5px;
   }
   .header__row{
@@ -433,14 +429,15 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
   .header__list{
     margin: 0 35px 0 0px;
     width: 100%;
-    height: 50px;
+    height: 2em;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
   .header__list li {
-    width: 145px;
-    margin: 0 20px;
+    margin: 0 40px;
+    height: 2em;
   }
 
   .header__home {
@@ -460,16 +457,13 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     background-clip: text;
     background-size: contain;
     font-size: 22px;
-    transition: font-size .5s;
   }
   .header a:hover {
-    width: 135px;
     color: rgba(225, 225, 225, .2);
     background: linear-gradient(90deg, rgba(255,46,0,1) 0%, rgba(255,106,42,1) 25%, rgba(249,178,34,1) 50%, rgba(255,191,61,1) 80%, rgba(255,230,86,1) 90%, rgba(251,255,79,1) 100%);
     -webkit-background-clip: text;
     background-clip: text;
     background-size: contain;
-    font-size: 23px;
     animation: animatedText .5s linear;
   }
   @keyframes animatedText {
