@@ -14,7 +14,7 @@ ul li{list-style: none;}
 img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 
-@media screen and (max-width: 880px){
+@media screen and (max-width: 778px){
     body{
       font-family: Comic Sans MS, serif;
       background-image: url("../img/lowpoly.png");
@@ -68,7 +68,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     }
 
 }
-@media screen and (min-width: 880px) and (max-width: 1080px){
+@media screen and (min-width: 778px) and (max-width: 992px){
   body{
     font-family: Comic Sans MS, serif;
   }
@@ -410,7 +410,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     background-image: radial-gradient(circle, #F9A72B 0%, #FA9026 70%, #FB6C1F 100%);
   }
 }
-@media screen and (min-width: 1080px){
+@media screen and (min-width: 992px){
   body{
     font-family: Comic Sans MS, serif;
   }
