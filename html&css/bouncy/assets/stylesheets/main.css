@@ -57,6 +57,7 @@ src: url("../fonts/BIG JOHN.otf");
     font-family: "Big John";
     color: #fff;
     font-size: 25px;
+    cursor: default;
 }
 
 /*                  Nav                 */
@@ -70,6 +71,13 @@ src: url("../fonts/BIG JOHN.otf");
 
 .header__nav  a {
     color: #fff;
+    margin-left: 25px;
+    font-family: "OpenSans";
+    transition: color .5s;
+}
+
+.header__nav  a:hover {
+    color: #ccc;
     margin-left: 25px;
     font-family: "OpenSans";
 }
@@ -99,14 +107,33 @@ src: url("../fonts/BIG JOHN.otf");
 }
 
 .main-screen__arrow-bottom {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-self: center;
-    padding: 11px;
+    justify-content: center;
+    align-content: flex-end;
     margin-bottom: 80px;
-    background: #19bd9a;
-    border-radius: 50%;
 }
+
+.main-screen__arrow-bottom a {
+    padding: 15px;
+    border-radius: 50%;
+    background: #19bd9a;
+}
+
+.main-screen__arrow-bottom img {
+    border-radius: 50%;
+    padding: 15px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    transition: transform .5s;
+}
+
+.main-screen__arrow-bottom img:hover {
+    border-radius: 50%;
+    padding: 15px;
+    transform: translate(-50%, -35%);
+    position: absolute;
+}
+
 
 /*                  Main                    */
