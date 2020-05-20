@@ -34,4 +34,5 @@ html {
 div {
     position: absolute;
     opacity: 0;
+    animation: .5s linear 0s infinite alternate hack;
 }
