@@ -28,13 +28,15 @@ src: url("../fonts/BIG JOHN.otf");
     font-family: "SourceSans Pro";
     src: url("../fonts/SourceSansPro-Light.otf")
 }
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /*                  HEADER              */
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 .main-screen {
     display: flex;
     flex-direction: column;
     z-index: 0;
-    position: absolute;
     background-image: url(../img/header.png);
     background-size: cover;
     background-position: center center;
@@ -60,7 +62,9 @@ src: url("../fonts/BIG JOHN.otf");
     cursor: default;
 }
 
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /*                  Nav                 */
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 .header__nav {
     display: flex;
@@ -135,5 +139,190 @@ src: url("../fonts/BIG JOHN.otf");
     position: absolute;
 }
 
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*                  This-is-bouncy                  */
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-/*                  Main                    */
+.this-is-bouncy {
+    padding-top: 6.5%;
+}
+
+.this-is-bouncy__container {
+    padding: 10px;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.this-is-bouncy__wrap-column {
+    flex-direction: column;
+}
+
+.this-is-bouncy__text {
+    margin-top: 5%;
+    font-family: "SourceSans Pro";
+    word-spacing: 5px;
+    width: 70%;
+    margin-right: 20%;
+    line-height: 19px;
+}
+
+.this-is-bouncy__title {
+    letter-spacing: 2px;
+    font-size: 20px;
+    color: #333b46;
+    margin-bottom: 8%;
+}
+
+.this-is-bouncy__subtitle {
+    font-size: 14px;
+    font-family: "OpenSans";
+    color: #81868e;
+    line-height: 25px;
+}
+
+.this-is-bouncy__button-readMore {
+    margin-top: 5%;
+    display: inline-block;
+    border: 1px solid #414852;
+    border-radius: 50px;
+    padding: 1.5% 7%;
+    color: #333b46;
+    transition: background .5s, color .4s, border .5s;
+}
+
+.this-is-bouncy__button-readMore:hover {
+    margin-top: 5%;
+    display: inline-block;
+    border: 1px solid #aaa;
+    border-radius: 50px;
+    background: #ccc;
+    padding: 1.5% 7%;
+    color: #fff;
+}
+
+
+.this-is-bouncy__phone {
+    width: 30%;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*                  Details About Bouncy                    */
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.details-about-bouncy {
+    margin-top: 3%;
+    background: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.details-about-bouncy__title {
+    letter-spacing: 2px;
+    font-weight: 300;
+    margin-top: 6%;
+    font-family: "SourceSans Pro";
+    font-size: 30px;
+    color: #666c74;
+}
+
+.details-about-bouncy__subtitle {
+    line-height: 25px;
+    margin-top: 2.5%;
+    text-align: center;
+    font-size: 14px;
+    font-family: "OpenSans";
+    color: #666c74;
+    width: 35%;
+}
+
+.details-about-bouncy__img-icon {
+    width: 80%;
+    margin-top: 4.5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.details-about-bouncy__img-icon :nth-child(1) {
+    margin-right: 5%;
+}
+
+.details-about-bouncy__img-icon :nth-child(2) {
+    margin-right: 5%;
+}
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*                  Creative Ideas                  */
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.creative-ideas {
+    margin-top: 5%;
+    margin-bottom: 7.1%;
+    font-family: "OpenSans";
+}
+
+.creative-ideas__container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.creative-ideas__wrap {
+    display: flex;
+    flex-direction: row;
+    line-height: 25px;
+}
+
+.creative-ideas__title {
+    font-family: "OpenSans";
+    font-size: 20px;
+    color: #464646;
+    margin-bottom: 3%;
+}
+
+.creative-ideas__weight-bold {
+    font-weight: bold;
+}
+
+.creative-ideas__color-blue {
+    color: #19bd9a;
+    font-weight: bold;
+}
+
+.creative-ideas__subtitle {
+    font-size: 16px;
+    width: 31%;
+    margin-right: 10%;
+}
+
+.creative-ideas__txt {
+    font-size: 14px;
+    width: 61%;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*                  Featured Projects                  */
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.featured-projects {
+    margin-top: 5.9%;
+}
+
+.featured-projects__container {
+    width: 32%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.featured-projects__title {
+    font-family: "SourceSans Pro";
+    font-size: 20px;
+    font-weight: 300;
+    color: #333b46;
+}
+
+.featured-projects__subtitle {
+    font-family: "OpenSans"; 
+}
