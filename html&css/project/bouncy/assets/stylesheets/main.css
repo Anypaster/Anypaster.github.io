@@ -308,7 +308,7 @@ src: url("../fonts/BIG JOHN.otf");
 }
 
 .featured-projects__container {
-    width: 32%;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -317,12 +317,60 @@ src: url("../fonts/BIG JOHN.otf");
 }
 
 .featured-projects__title {
+    letter-spacing: 3px;
     font-family: "SourceSans Pro";
     font-size: 20px;
     font-weight: 300;
     color: #333b46;
+    margin-bottom: 2.5%;
 }
 
 .featured-projects__subtitle {
+    width: 40%;
     font-family: "OpenSans"; 
+    font-size: 14px;
+    color: #81868e;
+    margin-bottom: 5.5%;
+}
+
+.featured-projects__images {
+    width: 100%;
+    display: flex;
+}
+
+.featured-projects__img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.featured-projects__img:before {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, .5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.images-macket__txt {
+    position: absolute;
+    font-family: "SourceSans Pro";
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.featured-projects__submit {
+    width: 100%;
+    background-image: url(../img/feature-projects__submit.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.featured-projects__submit-conainer {
+    margin: 0 160px;
+    display: flex;
+    justify-content: space-between;
 }
