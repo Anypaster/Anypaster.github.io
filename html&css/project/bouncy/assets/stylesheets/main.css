@@ -50,7 +50,7 @@ src: url("../fonts/BIG JOHN.otf");
 }
 
 .header__container {
-    margin: 0 95px;
+    margin: 0 5vw;
     display: flex;
     justify-content: space-between;
 }
@@ -58,7 +58,7 @@ src: url("../fonts/BIG JOHN.otf");
 .header__logo {
     font-family: "Big John";
     color: #fff;
-    font-size: 25px;
+    font-size: 2vw;
     cursor: default;
 }
 
@@ -69,7 +69,7 @@ src: url("../fonts/BIG JOHN.otf");
 .header__nav {
     display: flex;
     flex-direction: row;
-    font-size: 16px;
+    font-size: 1.3vw;
     color: #fff;
 }
 
@@ -92,22 +92,23 @@ src: url("../fonts/BIG JOHN.otf");
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 100%;
+    height: 75%;
     color: #fff;
 }
 
 .main-screen__code-cafe__title {
-    letter-spacing: 8px;
+    letter-spacing: .3vw;
     font-family: "SourceSans Pro";
-    font-size: 35px;
+    font-size: 2.5vw;
     font-weight: 300;
     margin-bottom: 45px;
 }
 
 .main-screen__code-cafe__subtitle {
     font-family: "OpenSans";
-    font-size: 16px;
+    font-size: 1.2vw;
     margin-bottom: 10px;
+    word-spacing: 0.1vw;
 }
 
 .main-screen__arrow-bottom {
@@ -115,7 +116,6 @@ src: url("../fonts/BIG JOHN.otf");
     display: flex;
     justify-content: center;
     align-content: flex-end;
-    margin-bottom: 80px;
 }
 
 .main-screen__arrow-bottom a {
@@ -148,7 +148,6 @@ src: url("../fonts/BIG JOHN.otf");
 }
 
 .this-is-bouncy__container {
-    padding: 10px;
     width: 70%;
     margin: 0 auto;
     display: flex;
@@ -161,27 +160,28 @@ src: url("../fonts/BIG JOHN.otf");
 .this-is-bouncy__text {
     margin-top: 5%;
     font-family: "SourceSans Pro";
-    word-spacing: 5px;
+    word-spacing: 0.3vw;
     width: 70%;
     margin-right: 20%;
-    line-height: 19px;
 }
 
 .this-is-bouncy__title {
-    letter-spacing: 2px;
-    font-size: 20px;
+    letter-spacing: 0.1vw;
+    font-size: 1.5vw;
     color: #333b46;
     margin-bottom: 8%;
 }
 
 .this-is-bouncy__subtitle {
-    font-size: 14px;
+    font-size: 1vw;
     font-family: "OpenSans";
     color: #81868e;
-    line-height: 25px;
+    line-height: 4vh;
 }
 
 .this-is-bouncy__button-readMore {
+    font-family: "OpenSans";
+    font-size: 1vw;
     margin-top: 5%;
     display: inline-block;
     border: 1px solid #414852;
@@ -203,7 +203,9 @@ src: url("../fonts/BIG JOHN.otf");
 
 
 .this-is-bouncy__phone {
-    width: 30%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -219,19 +221,20 @@ src: url("../fonts/BIG JOHN.otf");
 }
 
 .details-about-bouncy__title {
-    letter-spacing: 2px;
+    letter-spacing: 0.1vw;
     font-weight: 300;
     margin-top: 6%;
     font-family: "SourceSans Pro";
-    font-size: 30px;
+    font-size: 2vw;
     color: #666c74;
 }
 
 .details-about-bouncy__subtitle {
-    line-height: 25px;
+    line-height: 4vh;
     margin-top: 2.5%;
     text-align: center;
-    font-size: 14px;
+    font-size: 1vw;
+    word-spacing: 0.1vw;
     font-family: "OpenSans";
     color: #666c74;
     width: 35%;
@@ -269,17 +272,17 @@ src: url("../fonts/BIG JOHN.otf");
 .creative-ideas__wrap {
     display: flex;
     flex-direction: row;
-    line-height: 25px;
+    line-height: 4.3vh;
 }
 
 .creative-ideas__title {
     font-family: "OpenSans";
-    font-size: 20px;
+    font-size: 1.5vw;
     color: #464646;
     margin-bottom: 3%;
 }
 
-.creative-ideas__weight-bold {
+.font-bold {
     font-weight: bold;
 }
 
@@ -289,13 +292,13 @@ src: url("../fonts/BIG JOHN.otf");
 }
 
 .creative-ideas__subtitle {
-    font-size: 16px;
+    font-size: 1.2vw;
     width: 31%;
     margin-right: 10%;
 }
 
 .creative-ideas__txt {
-    font-size: 14px;
+    font-size: 1.1vw;
     width: 61%;
 }
 
@@ -319,16 +322,17 @@ src: url("../fonts/BIG JOHN.otf");
 .featured-projects__title {
     letter-spacing: 3px;
     font-family: "SourceSans Pro";
-    font-size: 20px;
+    font-size: 1.5vw;
     font-weight: 300;
     color: #333b46;
     margin-bottom: 2.5%;
 }
 
 .featured-projects__subtitle {
+    line-height: 4vh;
     width: 40%;
     font-family: "OpenSans"; 
-    font-size: 14px;
+    font-size: 1vw;
     color: #81868e;
     margin-bottom: 5.5%;
 }
@@ -338,39 +342,67 @@ src: url("../fonts/BIG JOHN.otf");
     display: flex;
 }
 
-.featured-projects__img {
-    width: 100%;
-    object-fit: cover;
+.featured-projects__images-contain {
+    width: 33.33%;
+    height: 50vh;
+    background-repeat: no-repeat;   
+    background-size: cover;
+    background-position: center center;
 }
 
-.featured-projects__img:before {
-    content: "";
-    position: absolute;
-    background-color: rgba(0, 0, 0, .5);
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+.featured-projects__images-contain-first {
+    background-image: url(../img/feature-projects__images-first.png);
+}
+.featured-projects__images-contain-second {
+    background-image: url(../img/feature-projects__images-second.png)
+}
+.featured-projects__images-contain-third {
+    background-image: url(../img/feature-projects__images-third.png)
 }
 
 .images-macket__txt {
-    position: absolute;
+    height: 100%;
     font-family: "SourceSans Pro";
-    font-size: 20px;
+    font-size: 1.5vw;
     letter-spacing: 3px;
     color: #fff;
     font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .featured-projects__submit {
-    width: 100%;
+    font-family: "OpenSans";
+    font-size: 1.2vw;
+    color: #fff;
     background-image: url(../img/feature-projects__submit.png);
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    width: 100%;
+    height: 13vh;
 }
 
 .featured-projects__submit-conainer {
-    margin: 0 160px;
+    margin: 0 auto;
+    width: 75%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.featured-projects__submit-button {
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    padding: 1.5vh 2vw;
+    transition: .5s border, .5s color;
+}
+
+.featured-projects__submit-button:hover {
+    color: #ccc;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    padding: 1.5vh 2vw;
 }
