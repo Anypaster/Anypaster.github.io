@@ -1,3 +1,6 @@
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*                  RESET                   */
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
 *{padding: 0;margin: 0;border: 0;}
 *,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
 :focus,:active{outline: none;}
@@ -14,6 +17,10 @@ ul li{list-style: none;}
 img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*                  Fonts                   */
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
 @font-face {
 font-family: "Big John";
 src: url("../fonts/BIG JOHN.otf");
@@ -26,9 +33,18 @@ src: url("../fonts/BIG JOHN.otf");
 
 @font-face {
     font-family: "SourceSans Pro";
-    src: url("../fonts/SourceSansPro-Light.otf")
+    src: url("../fonts/SourceSansPro-Black.ttf");
 }
 
+@font-face {
+    font-family: "SourceSans Pro Light";
+    src: url("../fonts/SourceSansPro-Light.otf");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Light.ttf");
+}
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /*                  HEADER              */
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -36,17 +52,17 @@ src: url("../fonts/BIG JOHN.otf");
 .main-screen {
     display: flex;
     flex-direction: column;
-    z-index: 0;
     background-image: url(../img/header.png);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
+    margin-bottom: 6.5%;
 }
 
 .main-screen__header {
-    padding-top: 45px;
+    margin-top: 45px;
 }
 
 .header__container {
@@ -73,9 +89,16 @@ src: url("../fonts/BIG JOHN.otf");
     color: #fff;
 }
 
+.header__nav li {
+    margin-right: 25px;
+}
+
+.header__nav :last-child {
+    margin: 0;
+}
+
 .header__nav  a {
     color: #fff;
-    margin-left: 25px;
     font-family: "OpenSans";
     transition: color .5s;
 }
@@ -83,6 +106,10 @@ src: url("../fonts/BIG JOHN.otf");
 .header__nav  a:hover {
     color: #ccc;
 }
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*                  Code Cafe                   */
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 .main-screen__code-cafe {
     display: flex;
@@ -95,10 +122,10 @@ src: url("../fonts/BIG JOHN.otf");
 }
 
 .main-screen__code-cafe__title {
+    text-transform: uppercase;
     letter-spacing: .3vw;
-    font-family: "SourceSans Pro";
+    font-family: "SourceSans Pro Light";
     font-size: 35px;
-    font-weight: 300;
     margin-bottom: 45px;
 }
 
@@ -140,7 +167,7 @@ src: url("../fonts/BIG JOHN.otf");
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 .this-is-bouncy {
-    padding-top: 6.5%;
+    margin-bottom: 3%;
 }
 
 .this-is-bouncy__container {
@@ -155,13 +182,14 @@ src: url("../fonts/BIG JOHN.otf");
 
 .this-is-bouncy__text {
     margin-top: 5%;
-    font-family: "SourceSans Pro";
+    font-family: "SourceSans Pro Light";
     word-spacing: 0.3vw;
     width: 70%;
     margin-right: 20%;
 }
 
 .this-is-bouncy__title {
+    font-family: "SourceSans Pro Light";
     letter-spacing: 0.1vw;
     font-size: 20px;
     color: #333b46;
@@ -172,13 +200,13 @@ src: url("../fonts/BIG JOHN.otf");
     font-size: 14px;
     font-family: "OpenSans";
     color: #81868e;
-    line-height: 4vh;
+    line-height: 28px;
+    margin-bottom: 5%;
 }
 
 .this-is-bouncy__button-readMore {
     font-family: "OpenSans";
     font-size: 16px;
-    margin-top: 5%;
     display: inline-block;
     border: 1px solid #414852;
     border-radius: 50px;
@@ -205,7 +233,6 @@ src: url("../fonts/BIG JOHN.otf");
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 .details-about-bouncy {
-    margin-top: 3%;
     background: #f3f3f3;
     display: flex;
     flex-direction: column;
@@ -213,16 +240,17 @@ src: url("../fonts/BIG JOHN.otf");
 }
 
 .details-about-bouncy__title {
+    text-transform: uppercase;
     letter-spacing: 0.1vw;
     font-weight: 300;
     margin-top: 6%;
-    font-family: "SourceSans Pro";
+    font-family: "SourceSans Pro Light";
     font-size: 20px;
     color: #666c74;
 }
 
 .details-about-bouncy__subtitle {
-    line-height: 4vh;
+    line-height: 25px;
     margin-top: 2.5%;
     text-align: center;
     font-size: 14px;
@@ -264,7 +292,6 @@ src: url("../fonts/BIG JOHN.otf");
 .creative-ideas__wrap {
     display: flex;
     flex-direction: row;
-    line-height: 4.3vh;
 }
 
 .creative-ideas__title {
@@ -278,18 +305,20 @@ src: url("../fonts/BIG JOHN.otf");
     font-weight: bold;
 }
 
-.creative-ideas__color-blue {
+.color-blue-bold {
     color: #19bd9a;
     font-weight: bold;
 }
 
 .creative-ideas__subtitle {
+    line-height: 28px;
     font-size: 16px;
     width: 31%;
     margin-right: 10%;
 }
 
 .creative-ideas__txt {
+    line-height: 25px;
     font-size: 14px;
     width: 61%;
 }
@@ -312,8 +341,9 @@ src: url("../fonts/BIG JOHN.otf");
 }
 
 .featured-projects__title {
+    text-transform: uppercase;
     letter-spacing: 3px;
-    font-family: "SourceSans Pro";
+    font-family: "SourceSans Pro Light";
     font-size: 20px;
     font-weight: 300;
     color: #333b46;
@@ -321,7 +351,7 @@ src: url("../fonts/BIG JOHN.otf");
 }
 
 .featured-projects__subtitle {
-    line-height: 4vh;
+    line-height: 25px;
     width: 40%;
     font-family: "OpenSans"; 
     font-size: 14px;
@@ -370,7 +400,7 @@ src: url("../fonts/BIG JOHN.otf");
 
 .images-macket__txt {
     height: 100%;
-    font-family: "SourceSans Pro";
+    font-family: "SourceSans Pro Light";
     font-size: 20px;
     letter-spacing: 3px;
     color: #fff;
@@ -401,13 +431,20 @@ src: url("../fonts/BIG JOHN.otf");
 
 .featured-projects__submit-conainer {
     margin: 0 auto;
-    width: 75%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.featured-projects__submit-txt {
+    width: 70%;
+}
+
 .featured-projects__submit-button {
+    width: 13vw;
+    white-space: nowrap;
+    text-align: center;
     font-size: 16px;
     color: #fff;
     border: 1px solid #fff;
@@ -419,4 +456,196 @@ src: url("../fonts/BIG JOHN.otf");
 .featured-projects__submit-button:hover {
     color: #ccc;
     border: 1px solid #ccc;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*                   Our Cervices                     */
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.our-services {
+    margin: 85px 0 137px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.our-services__title {
+    font: 20px "SourceSans Pro Light";
+    text-transform: uppercase;
+    margin-bottom: 41px;
+    color: #333b46;
+}
+
+.our-services-subtitle {
+    text-align: center;
+    width: 32vw;
+    font: 14px "OpenSans";
+    color: #81868e;
+    margin-bottom: 33px;
+    line-height: 25px;
+}
+
+.our-services__wrapper {
+    width: 77%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.our-services__img {
+    margin-right: 3.9vw;
+}
+
+.our-services__img li {
+    margin-bottom: 1.5vw;
+    padding: 10.5px;
+    border-radius: 50%;
+    background: #81868e;
+}
+
+.our-services__img-joy {
+    transform: translateY(-10%);
+}
+
+.our-services__img-plug {
+    transform: translateX(10%);
+}
+
+.our-services__img img {
+    width: 28px;
+    height: 28px;
+}
+
+.our-services__graphic-design {
+    width: 29vw;
+    font-family: "OpenSans";
+    margin-right: 5.8vw;
+}
+
+
+.graphic-design__title {
+    font-size: 20px;
+    color: #464646;
+    margin-bottom: 5.3vh;
+}
+
+.graphic-design__subtitle {
+    font-size: 16px;
+    color: #81868e;
+    margin-bottom: 5vh;
+    line-height: 28px;
+}
+
+.graphic-design__txt {
+    font-size: 14px;
+    color: #81868e;
+    line-height: 25px;
+}
+  
+.our-services__circle {
+    display: flex;
+    align-items: center;
+}
+
+.our-services__circle-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3.3vw;
+}
+
+.our-services__circle-column:last-child {
+    margin: 0;
+}
+
+.circle-column__wrapper {
+    position: relative;
+    margin-bottom: 3.8vh;
+}
+
+.fz-14 {
+    font-size: 12px;
+}
+
+.circle-percent__txt {
+    position: absolute;
+    font: 25px "OpenSans";
+    color: #81868e;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.our-services__circle-meta {
+    font: 16px "Roboto";
+    color: #81868e;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*                  IMPRESSED                   */                   
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.impressed {
+    background-image: url(../img/impressed-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 56.5vh;
+    color: #b2b3b3;
+}
+
+.impressed-container {
+    margin: 0 6.5vw 0 6.5vw;
+    display: flex;
+}
+
+.impressed-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.impressed-title {
+    font: 20px "SourceSans Pro Light";
+    color: #f3f3f3;
+    margin: 11vh 0 9vh 0;
+    text-transform: uppercase;
+}
+
+.impressed-subtitle {
+    width: 46vw;
+    font: 16px "OpenSans";
+    line-height: 28px;
+    margin: 0 9.3vw 3vh 0;
+}
+
+.impressed-noman {
+    font: bold 14px "OpenSans";
+    text-transform: uppercase;
+    margin-bottom: 1vh;
+}
+
+.color-blue {
+    color: #19bd9a;
+}
+
+.impressed-creative-director {
+    font: 14px "OpenSans";
+    text-transform: uppercase;
+}
+
+.impressed-pc {
+    margin-top: -5vh;
+}
+
+.impressed-pc-wrap {
+    position: relative;
+}
+
+.impressed-pc-txt {
+    font: 30px "Big John";
+    color: #fff;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
