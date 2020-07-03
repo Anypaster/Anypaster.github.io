@@ -315,7 +315,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     line-height: 28px;
     letter-spacing: 0.05em;
     font-size: 16px;
-    width: 31%;
+    width: 33%;
     margin-right: 10%;
 }
 
@@ -438,7 +438,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 }
 
 .featured-projects__submit-button {
-    width: 13vw;
+    display: flex;
     white-space: nowrap;
     text-align: center;
     font-size: 16px;
@@ -500,6 +500,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     background: #81868e;
 }
 
+.our-services__img :last-child {
+    margin: 0;
+}
+
 .our-services__img-joy {
     transform: translateY(-10%);
 }
@@ -548,6 +552,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 }
 
 .our-services__circle-column {
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -634,6 +639,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 }
 
 .impressed-pc {
+    object-fit: cover;
     margin-top: -5vh;
 }
 
@@ -708,12 +714,14 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 }
 
 .container-jobs__column {
+    width: 20vw;
     display: flex;
     flex-direction: column;
 }
 
 .container-jobs__column img {
     margin: 0 10px 10px 0;
+    object-fit: cover;
 }
 
 .container-jobs__column :last-child {
@@ -750,4 +758,34 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     border-radius: 25px;
     color: #fff;
 }
-  
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*                  Adaptive                    */
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+@media screen and (max-width: 1024px) {
+    .our-services__circle {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-right: -2vw;
+    }
+
+    .our-services__circle-column {
+        margin: 0 0 15px 0;
+    }
+    .graphic-design__circle-percent {
+        width: 100%;
+    }
+    .our-services__img li {
+        margin-bottom: 4.4vw
+    }
+
+}
+
+@media screen and (max-width: 1240px) {
+    .our-services__graphic-design {
+        
+    }
+}
