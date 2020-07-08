@@ -139,118 +139,119 @@ body {
   transition: background-position .4s;
 }
 @media screen and (min-width: 767px){
-  .menu__list :nth-child(1) a:hover {
+  .menu-header__list :nth-child(1) a:hover {
     background-position: 107.11px 0;
   }
 
-  .menu__list :nth-child(2) a:hover {
+  .menu-header__list :nth-child(2) a:hover {
     background-position: 112.69px 0;
   }
 
-  .menu__list :nth-child(3) a:hover {
+  .menu-header__list :nth-child(3) a:hover {
     background-position: 79.55px 0;
   }
 
-  .menu__list :nth-child(4):hover {
+  .menu-header__list :nth-child(4):hover {
     background-position: 75.11px 0;
   }
 }
 /*/////////////////////////////////////////////////////////////////////////*/
 /*                    Aimated BG                    */
 /*/////////////////////////////////////////////////////////////////////////*/
+@media screen and (min-width: 1px){
   .bg-cloud {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 60vh;
-    margin: 20vh 0 20vh 0;
-    position: absolute;
-  }
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 60vh;
+      margin: 20vh 0 20vh 0;
+      position: absolute;
+    }
 
-  .bg-cloud__container {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-  }
+    .bg-cloud__container {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+    }
 
-  .clouds {
-    position: absolute;
-    width: 100%;
-    height: 40%;
-  }
+    .clouds {
+      position: absolute;
+      width: 100%;
+      height: 40%;
+    }
 
-  .background {
-    background: url(../img/small.svg) no-repeat;
-    animation: animation_cloud 160s linear infinite;
-    z-index: -2;
-  }
+    .background {
+      background: url(../img/small.svg) no-repeat;
+      animation: animation_cloud 160s linear infinite;
+      z-index: -2;
+    }
 
-  .foreground {
-    background: url(../img/big.svg) no-repeat;
-    animation: animation_cloud 130s linear infinite;
-    z-index: -1;
-  }
+    .foreground {
+      background: url(../img/big.svg) no-repeat;
+      animation: animation_cloud 130s linear infinite;
+      z-index: -1;
+    }
 
-  .clouds.background:nth-child(1) {
-    top: 10%;
-    animation-delay: -70s;
-    background-size: auto 20%;
-  }
+    .clouds.background:nth-child(1) {
+      top: 10%;
+      animation-delay: -70s;
+      background-size: auto 20%;
+    }
 
-  .clouds.foreground:nth-child(2) {
-    animation-delay: -30s;
-    top: 1%;
-    background-size: auto 50%;
-  }
+    .clouds.foreground:nth-child(2) {
+      animation-delay: -30s;
+      top: 1%;
+      background-size: auto 50%;
+    }
 
-  .clouds.background:nth-child(3) {
-    animation-delay: -40s;
-    top: 30%;
-    background-size: auto 10%;
-  }
+    .clouds.background:nth-child(3) {
+      animation-delay: -40s;
+      top: 30%;
+      background-size: auto 10%;
+    }
 
-  .clouds.foreground:nth-child(4) {
-    animation-delay: -85s;
-    top: 10%;
-    background-size: auto 60%;
-  }
+    .clouds.foreground:nth-child(4) {
+      animation-delay: -85s;
+      top: 10%;
+      background-size: auto 60%;
+    }
 
-  .clouds.background:nth-child(5) {
-    animation-delay: -120s;
-    top: 40%;
-    background-size: auto 25%;
-  }
+    .clouds.background:nth-child(5) {
+      animation-delay: -120s;
+      top: 40%;
+      background-size: auto 25%;
+    }
 
-  .clouds.foreground:nth-child(6) {
-    animation-delay: -50s;
-    top: 60%;
-    background-size: auto 60%;
-  }
+    .clouds.foreground:nth-child(6) {
+      animation-delay: -50s;
+      top: 60%;
+      background-size: auto 60%;
+    }
 
-  .clouds.background:nth-child(7) {
-    animation-delay: -100s;
-    top: 80%;
-    background-size: auto 22%;
-  }
+    .clouds.background:nth-child(7) {
+      animation-delay: -100s;
+      top: 80%;
+      background-size: auto 22%;
+    }
 
-  .clouds.foreground:nth-child(8) {
-    animation-delay: -1s;
-    top: 45%;
-    background-size: auto 60%;
-  }
+    .clouds.foreground:nth-child(8) {
+      animation-delay: -1s;
+      top: 45%;
+      background-size: auto 60%;
+    }
 
-  .clouds.background:nth-child(9) {
-    animation-delay: -15s;
-    top: 50%;
-    background-size: auto 15%;
-  }
+    .clouds.background:nth-child(9) {
+      animation-delay: -15s;
+      top: 50%;
+      background-size: auto 15%;
+    }
 
-  .clouds.foreground:nth-child(10) {
-    animation-delay: 10s;
-    top: 15%;
-    background-size: auto 35%;
-  }
+    .clouds.foreground:nth-child(10) {
+      animation-delay: 10s;
+      top: 15%;
+      background-size: auto 35%;
+    }
 
   @keyframes animation_cloud {
     0% {
@@ -266,6 +267,8 @@ body {
       transform: translateX(-15%) translateZ(0);
     }
   }
+}
+
 /*/////////////////////////////////////////////////////////////////////////*/
 /*                    Adaptive                    */
 /*/////////////////////////////////////////////////////////////////////////*/

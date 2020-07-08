@@ -169,19 +169,19 @@ body {
   transition: background-position .4s;
 }
 @media screen and (min-width: 767px){
-  .menu__list :nth-child(1) a:hover {
+  .menu-header__list :nth-child(1) a:hover {
     background-position: 107.11px 0;
   }
 
-  .menu__list :nth-child(2) a:hover {
+  .menu-header__list :nth-child(2) a:hover {
     background-position: 112.69px 0;
   }
 
-  .menu__list :nth-child(3) a:hover {
+  .menu-header__list :nth-child(3) a:hover {
     background-position: 79.55px 0;
   }
 
-  .menu__list :nth-child(4):hover {
+  .menu-header__list :nth-child(4):hover {
     background-position: 75.11px 0;
   }
 }
@@ -323,6 +323,7 @@ body {
     top: 52px;
     padding: 10px 0;
     background: rgba(16, 15, 13, 0.95);
+    z-index: 5;
   }
   .menu-header__list li {
     margin-right: 80px;
