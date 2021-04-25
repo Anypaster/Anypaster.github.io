@@ -39,3 +39,14 @@ document.documentElement.addEventListener("click", function (e) {
         }
     }
 })
+
+/*///////////////////////////////////////////////////////////////////////////*/
+/*                    HtmlCss - Modal Window (pop-up)                        */
+/*///////////////////////////////////////////////////////////////////////////*/
+
+const js_btn = document.querySelector('.menu-html_btn');
+const js_menu = document.querySelector(".menu-html");
+
+js_btn.addEventListener("click", function() {
+    js_menu.classList.add("_menu-html_active");
+})
